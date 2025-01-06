@@ -1,6 +1,9 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-outside-of-docker
 {
+  "containerEnv": {
+    "MEDUSA_REDIS_URL": "redis://localhost:6379"
+  },
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
@@ -20,42 +23,42 @@
         "unifiedjs.vscode-mdx",
         "wix.vscode-import-cost",
         "DavidAnson.vscode-markdownlint",
-        "YoavBls.pretty-ts-errors"
-      ]
+        "YoavBls.pretty-ts-errors",
+        "mongodb.mongodb-vscode",
+        "naumovs.color-highlight"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono"
+      }
     }
   },
+  "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
   "features": {
-    "ghcr.io/devcontainers-contrib/features/act:1": {
+    "ghcr.io/devcontainers-extra/features/act:1": {
       "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
+      "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions",
+      "plugins": "ssh-agent npm",
+      "username": "vscode"
     },
     "ghcr.io/devcontainers/features/aws-cli:1": {
       "version": "latest"
     },
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "configureZshAsDefaultShell": true,
-      "installOhMyZsh": true,
-      "installZsh": true,
-      "nonFreePackages": false,
-      "upgradePackages": false,
-      "userGid": "automatic",
-      "userUid": "automatic",
-      "username": "automatic"
-    },
-    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
-    "ghcr.io/ksh5022/devcontainer-features/d2:1": {
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "terragrunt": "latest",
+      "tflint": "latest",
       "version": "latest"
     },
     "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
   },
-  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "forwardPorts": [3000],
   "mounts": [
-    {
-      "source": "/var/run/docker.sock",
-      "target": "/var/run/docker-host.sock",
-      "type": "bind"
-    }
+    "source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind"
   ],
-  "name": "Turborepo",
-  "workspaceFolder": "${localWorkspaceFolder}",
-  "workspaceMount": "source=${localWorkspaceFolder},target=${localWorkspaceFolder},type=bind"
+  "name": "Node.js & Mongo",
+  "postCreateCommand": "/usr/local/share/docker-init.sh",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 }

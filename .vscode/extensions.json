@@ -1,6 +1,5 @@
 {
   "recommendations": [
-    "astro-build.astro-vscode",
     "amazonwebservices.aws-toolkit-vscode",
     "bradlc.vscode-tailwindcss",
     "csstools.postcss",
@@ -16,6 +15,8 @@
     "unifiedjs.vscode-mdx",
     "wix.vscode-import-cost",
     "DavidAnson.vscode-markdownlint",
-    "YoavBls.pretty-ts-errors"
+    "YoavBls.pretty-ts-errors",
+    "mongodb.mongodb-vscode",
+    "naumovs.color-highlight"
   ]
 }

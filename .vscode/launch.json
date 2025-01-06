@@ -27,44 +27,54 @@
   ],
   "configurations": [
     {
-      "command": "pnpm dev --filter astro...",
+      "console": "integratedTerminal",
       "cwd": "${workspaceFolder}/",
       "name": "Astro",
       "request": "launch",
+      "runtimeArgs": ["dev", "--filter", "astro..."],
+      "runtimeExecutable": "pnpm",
       "skipFiles": ["<node_internals>/**"],
-      "type": "node-terminal"
+      "type": "node"
     },
     {
-      "command": "pnpm dev --filter next...",
+      "console": "integratedTerminal",
       "cwd": "${workspaceFolder}/",
       "name": "Next",
       "request": "launch",
+      "runtimeArgs": ["dev", "--filter", "next..."],
+      "runtimeExecutable": "pnpm",
       "skipFiles": ["<node_internals>/**"],
-      "type": "node-terminal"
+      "type": "node"
     },
     {
-      "command": "pnpm dev --filter payload...",
+      "console": "integratedTerminal",
       "cwd": "${workspaceFolder}/",
       "name": "Payload",
       "request": "launch",
+      "runtimeArgs": ["dev", "--filter", "payload..."],
+      "runtimeExecutable": "pnpm",
       "skipFiles": ["<node_internals>/**"],
-      "type": "node-terminal"
+      "type": "node"
     },
     {
-      "command": "pnpm dev --filter svelte...",
+      "console": "integratedTerminal",
       "cwd": "${workspaceFolder}/",
       "name": "Svelte",
       "request": "launch",
+      "runtimeArgs": ["dev", "--filter", "svelte..."],
+      "runtimeExecutable": "pnpm",
       "skipFiles": ["<node_internals>/**"],
-      "type": "node-terminal"
+      "type": "node"
     },
     {
-      "command": "pnpm storybook --filter docs...",
+      "console": "integratedTerminal",
       "cwd": "${workspaceFolder}/",
       "name": "Docs",
       "request": "launch",
+      "runtimeArgs": ["dev", "--filter", "docs..."],
+      "runtimeExecutable": "pnpm",
       "skipFiles": ["<node_internals>/**"],
-      "type": "node-terminal"
+      "type": "node"
     }
   ],
   "version": "0.2.0"
