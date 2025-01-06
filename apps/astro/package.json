@@ -5,7 +5,7 @@
   "scripts": {
     "astro": "astro",
     "build": "astro check && astro build",
-    "dev": "dotenvx run --convention=nextjs -- cross-env NODE_OPTIONS=\"--no-deprecation --inspect\" astro dev",
+    "dev": "dotenvx run --convention=nextjs -- cross-env NODE_OPTIONS=\"--no-deprecation --inspect\" astro dev --host 0.0.0.0",
     "format": "prettier --check . --ignore-path ../../.gitignore --ignore-path ./.prettierignore",
     "lint": "eslint .",
     "preview": "astro preview",

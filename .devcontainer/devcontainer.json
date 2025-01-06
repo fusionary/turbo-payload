@@ -53,7 +53,7 @@
     },
     "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
   },
-  "forwardPorts": [3000],
+  "forwardPorts": [3000, 3001, 4321, 5173],
   "mounts": [
     "source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind"
   ],
