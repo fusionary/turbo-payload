@@ -1,0 +1,13 @@
+node_modules
+.next
+.vscode
+.github
+.turbo
+build
+debug
+dist
+bin
+.sst
+.open-next
+.turbo
+cdk*

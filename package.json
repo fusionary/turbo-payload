@@ -25,14 +25,14 @@
     "@local/prettier-config": "workspace:*",
     "@turbo/gen": "^2.3.3",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.11",
-    "npm-check-updates": "^17.1.11",
+    "lint-staged": "^15.3.0",
+    "npm-check-updates": "^17.1.13",
     "prettier": "^3.4.2",
     "syncpack": "^12.4.0",
     "turbo": "^2.3.3",
     "typescript": "^5.7.2"
   },
-  "packageManager": "pnpm@9.13.0+sha512.beb9e2a803db336c10c9af682b58ad7181ca0fbd0d4119f2b33d5f2582e96d6c0d93c85b23869295b765170fbdaa92890c0da6ada457415039769edf3c959efe",
+  "packageManager": "pnpm@9.15.3+sha256.c1da43727ccbc1ed42aff4fd6bdb4b1e91e65a818e6efff5b240fbf070ba4eaf",
   "engines": {
     "node": ">=20.11.1"
   }

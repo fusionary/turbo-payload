@@ -1,0 +1,113 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#7eb8da",
+          "style": "plain",
+          "template": "\u250f{{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }} {{.Version}}{{ end }}{{ if .Name }}[{{ .Name }}]{{ end }}{{ end }}",
+          "type": "project"
+        },
+        {
+          "foreground": "#ffa5d8",
+          "properties": {
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true
+          },
+          "style": "plain",
+          "template": "[<#ffffff>{{ .UpstreamIcon }}</>{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <#ffffff>\uf044</> {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} <#ffffff>\uf046</> {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} <#ffffff>\ueb4b</> {{ .StashCount }}{{ end }}]",
+          "type": "git"
+        },
+        {
+          "foreground": "#98bfad",
+          "style": "plain",
+          "template": "[\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}]",
+          "type": "node"
+        },
+        {
+          "foreground": "#98bfad",
+          "style": "plain",
+          "template": "[\uDB80\uDEC1 {{.Full}}]",
+          "type": "pnpm"
+        },
+        {
+          "foreground": "#ffa5d8",
+          "template": "[{{ .WorkspaceName }}{{ if .Version }} {{ .Version }}{{ end }}]",
+          "type": "terraform"
+        },
+        {
+          "foreground": "#bfa098",
+          "style": "plain",
+          "template": "[{{ .Profile }}{{if .Region}}@{{ .Region }}{{ end }}]",
+          "type": "aws"
+        },
+        {
+          "foreground": "#ffa5d8",
+          "style": "plain",
+          "template": "[\uf0e7]",
+          "type": "root"
+        },
+        {
+          "foreground": "#ffa5d8",
+          "style": "powerline",
+          "template": "[<#ffffff>\uea6c</> Error, check your command]",
+          "type": "status"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "foreground": "#be9ddf",
+          "properties": {
+            "style": "dallas",
+            "threshold": 0
+          },
+          "style": "diamond",
+          "template": "[<#ffffff>\uf252</> {{ .FormattedMs }}s]",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#7eb8da",
+          "properties": {
+            "mapped_locations": {
+              "/workspaces": "@"
+            },
+            "style": "full"
+          },
+          "style": "plain",
+          "template": "\u2516[<#98bfad>{{ .Path }}</>]",
+          "type": "path"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#7eb8da",
+          "style": "plain",
+          "template": "\u2514\u2500Δ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 3
+}
