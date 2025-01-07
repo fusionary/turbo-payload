@@ -58,7 +58,14 @@
     "source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind"
   ],
   "name": "Node.js & Mongo",
+  "portsAttributes": {
+    "3000": {
+      "label": "Payload",
+      "onAutoForward": "notify"
+    }
+  },
   "postCreateCommand": "/usr/local/share/docker-init.sh",
   "service": "app",
+  "waitFor": "postCreateCommand",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 }
