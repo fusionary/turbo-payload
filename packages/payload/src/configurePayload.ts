@@ -64,7 +64,7 @@ const baseConfig: Config = {
       redirectTypes: ['301', '302', '307', '308'],
     }),
     seoPlugin({
-      collections: [Pages.slug, Articles.slug],
+      collections: ['pages', 'articles'],
       fields: ({ defaultFields }) => {
         return defaultFields.map(field => {
           if ('name' in field && field.name === 'title') {
@@ -82,7 +82,7 @@ const baseConfig: Config = {
           ? doc.title
           : '',
       tabbedUI: true,
-      uploadsCollection: Media.slug,
+      uploadsCollection: 'media',
     }),
   ],
   secret: env.PAYLOAD_PRIVATE_SECRET,
