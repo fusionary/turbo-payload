@@ -19,7 +19,7 @@
     "prettier-plugin-sort-json": "^4.0.0",
     "prettier-plugin-svelte": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
-    "svelte": "^5.16.2"
+    "svelte": "^5.16.5"
   },
   "devDependencies": {
     "@local/tsconfig": "workspace:*",
