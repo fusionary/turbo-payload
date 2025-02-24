@@ -1,4 +1,4 @@
-import { default as base } from '@local/eslint-config/react'
+import { default as base } from '@local/eslint-config/next'
 
 const config = [
   {
