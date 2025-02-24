@@ -1,5 +1,5 @@
 // @ts-expect-error - no types
-import { default as base } from '@fusionary/eslint-config'
+import { default as base } from '@fusionary/eslint-config/next'
 
 /** @typedef {import('eslint').Linter.Config} Config */
 

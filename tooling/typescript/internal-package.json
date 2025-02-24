@@ -1,10 +1,4 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
-    "emitDeclarationOnly": true,
-    "noEmit": false
-  },
-  "extends": "./base.json"
+  "extends": "@fusionary/tsconfig/internal-package.json"
 }

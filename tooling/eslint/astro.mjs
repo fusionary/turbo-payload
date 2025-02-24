@@ -1,5 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import base from '@local/eslint-config'
 
 /** @typedef {import('eslint').Linter.Config} Config */
