@@ -1,1 +1,1 @@
-export * from './SlugField'
+export * from './slug-field'
