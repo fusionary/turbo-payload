@@ -16,14 +16,14 @@
   "dependencies": {
     "@etchteam/storybook-addon-css-variables-theme": "^3.0.0",
     "@local/ui": "workspace:*",
-    "@storybook/nextjs": "^8.4.7",
-    "@storybook/react": "^8.4.7",
+    "@storybook/nextjs": "^8.5.8",
+    "@storybook/react": "^8.5.8",
     "css-loader": "^6.11.0",
     "postcss-loader": "^8.1.1",
-    "storybook": "^8.4.7",
+    "storybook": "^8.5.8",
     "style-loader": "^3.3.4",
     "tsconfig-paths-webpack-plugin": "^4.2.0",
-    "webpack": "^5.97.1"
+    "webpack": "^5.98.0"
   },
   "devDependencies": {
     "@local/eslint-config": "workspace:*",
@@ -34,11 +34,11 @@
     "@types/node": "^20.17.19",
     "aws-cdk-lib": "2.132.1",
     "constructs": "10.3.0",
-    "eslint": "^9.20.1",
-    "prettier": "^3.5.1",
+    "eslint": "^9.21.0",
+    "prettier": "^3.5.2",
     "react": "catalog:next15",
     "react-dom": "catalog:next15",
-    "sst": "^2.45.2",
+    "sst": "^2.47.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3"
   }

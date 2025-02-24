@@ -13,7 +13,7 @@
   },
   "prettier": "@local/prettier-config",
   "dependencies": {
-    "@fusionary/prettier-config": "^5.0.0",
+    "@fusionary/prettier-config": "^5.0.2",
     "prettier-plugin-tailwindcss": "^0.6.11"
   },
   "devDependencies": {
