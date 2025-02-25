@@ -1,7 +1,13 @@
-import { default as base } from '@local/eslint-config'
+import base from '@local/eslint-config'
+
+/** @typedef {import('eslint').Linter.Config} Config */
+
+/** @type {Config[]} */
+// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+const baseConfig = base
 
 const config = [
-  ...base,
+  ...baseConfig,
   {
     name: 'Ignore Process.env',
     rules: {

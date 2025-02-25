@@ -23,16 +23,16 @@
   "prettier": "@local/prettier-config",
   "devDependencies": {
     "@local/prettier-config": "workspace:*",
-    "@turbo/gen": "^2.3.3",
+    "@turbo/gen": "^2.4.2",
     "husky": "^9.1.7",
-    "lint-staged": "^15.3.0",
-    "npm-check-updates": "^17.1.13",
-    "prettier": "^3.4.2",
+    "lint-staged": "^15.4.3",
+    "npm-check-updates": "^17.1.15",
+    "prettier": "^3.5.2",
     "syncpack": "^12.4.0",
-    "turbo": "^2.3.3",
-    "typescript": "^5.7.2"
+    "turbo": "^2.4.2",
+    "typescript": "^5.7.3"
   },
-  "packageManager": "pnpm@9.15.3+sha256.c1da43727ccbc1ed42aff4fd6bdb4b1e91e65a818e6efff5b240fbf070ba4eaf",
+  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
   "engines": {
     "node": ">=20.11.1"
   }

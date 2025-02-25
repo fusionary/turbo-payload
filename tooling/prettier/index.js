@@ -1,46 +1,16 @@
-import { fileURLToPath } from 'url'
+const path = require('node:path')
+// @ts-expect-error - no types
+const base = require('@fusionary/prettier-config')
+
+const { join } = path
 
 /** @typedef {import("prettier").Config} PrettierConfig */
 /** @typedef {import("prettier-plugin-tailwindcss").PluginOptions} TailwindConfig */
-/** @typedef {import("@ianvs/prettier-plugin-sort-imports").PluginConfig} SortImportsConfig */
 
-/** @type { PrettierConfig | SortImportsConfig | TailwindConfig } */
-const config = {
-  arrowParens: 'avoid',
-  bracketSpacing: true,
-  endOfLine: 'lf',
-  semi: false,
-  singleQuote: true,
-  tabWidth: 2,
-  trailingComma: 'all',
-  useTabs: false,
-  plugins: [
-    '@ianvs/prettier-plugin-sort-imports',
-    'prettier-plugin-packagejson',
-    'prettier-plugin-sort-json',
-    'prettier-plugin-tailwindcss',
-  ],
-  tailwindConfig: fileURLToPath(
-    new URL('../../tooling/tailwind/src/tailwind.ts', import.meta.url),
-  ),
-  tailwindFunctions: ['cn', 'clsx', 'cva', 'tw', 'twMerge', 'classNames'],
-  jsonRecursiveSort: true,
-  importOrder: [
-    '<TYPES>',
-    '^(react/(.*)$)|^(react$)',
-    '^(next/(.*)$)|^(next$)',
-    '<THIRD_PARTY_MODULES>',
-    '',
-    '<TYPES>^@local',
-    '^@local/(.*)$',
-    '',
-    '<TYPES>^[.|..|~]',
-    '^~/',
-    '^[../]',
-    '^[./]',
-  ],
-  importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
-  importOrderTypeScriptVersion: '5.5.3',
+/** @type { PrettierConfig | TailwindConfig } */
+module.exports = {
+  ...base,
+  plugins: [...base.plugins, require.resolve('prettier-plugin-tailwindcss')],
+  tailwindConfig: join(__dirname, '../../tooling/tailwind/src/tailwind.ts'),
+  tailwindFunctions: ['classNames', 'clsx', 'cn', 'cva', 'tv', 'tw', 'twMerge'],
 }
-
-export default config
