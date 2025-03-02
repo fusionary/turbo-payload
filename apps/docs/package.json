@@ -32,13 +32,10 @@
     "@local/tailwind-config": "workspace:*",
     "@local/tsconfig": "workspace:*",
     "@types/node": "^20.17.19",
-    "aws-cdk-lib": "2.132.1",
-    "constructs": "10.3.0",
     "eslint": "^9.21.0",
     "prettier": "^3.5.2",
     "react": "catalog:next15",
     "react-dom": "catalog:next15",
-    "sst": "^2.47.3",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3"
   }
