@@ -14,7 +14,7 @@
   },
   "prettier": "@local/prettier-config",
   "dependencies": {
-    "@fusionary/storybook-config": "5.1.5-pre.5",
+    "@fusionary/storybook-config": "^5.1.5",
     "@local/ui": "workspace:*",
     "@storybook/addon-a11y": "^8.6.4",
     "@storybook/addon-designs": "^8.2.0",
