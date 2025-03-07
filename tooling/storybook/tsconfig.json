@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {
-    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
-  },
-  "exclude": ["node_modules"],
-  "extends": "@local/tsconfig/base.json",
-  "include": [".", ".storybook/**/*.ts"]
-}

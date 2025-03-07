@@ -1,9 +1,0 @@
-{
-  "*.json": [
-    "prettier --write --check --ignore-path ../../.gitignore --ignore-path ./.prettierignore"
-  ],
-  "*.{js,ts,tsx,cjs,mjs}": [
-    "eslint --fix",
-    "prettier --write --check --ignore-path ../../.gitignore --ignore-path ./.prettierignore"
-  ]
-}

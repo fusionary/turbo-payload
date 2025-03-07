@@ -20,12 +20,11 @@
   "devDependencies": {
     "@local/eslint-config": "workspace:*",
     "@local/prettier-config": "workspace:*",
-    "@local/storybook-config": "workspace:*",
     "@local/tsconfig": "workspace:*",
-    "@types/node": "^20.17.22",
+    "@types/node": "^20.17.23",
     "@types/react": "catalog:next15",
     "eslint": "^9.21.0",
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "typescript": "^5.8.2"
   }
 }

@@ -13,12 +13,12 @@
   },
   "prettier": "@local/prettier-config",
   "dependencies": {
-    "@fusionary/prettier-config": "^5.1.0",
+    "@fusionary/prettier-config": "5.1.5-pre.5",
     "prettier-plugin-tailwindcss": "^0.6.11"
   },
   "devDependencies": {
     "@local/tsconfig": "workspace:*",
-    "@types/node": "^20.17.22",
+    "@types/node": "^20.17.23",
     "typescript": "^5.8.2"
   }
 }
