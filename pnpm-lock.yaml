@@ -132,8 +132,8 @@ importers:
   apps/docs:
     dependencies:
       '@fusionary/storybook-config':
-        specifier: ^5.1.5
-        version: 5.1.5(@storybook/components@8.6.4(storybook@8.6.4(prettier@3.5.3)))(@storybook/theming@8.6.4(storybook@8.6.4(prettier@3.5.3)))(@types/react@19.0.1)(next@15.2.0(babel-plugin-react-compiler@0.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.77.4))(postcss@8.5.3)(prettier@3.5.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rollup@4.34.8)(typescript@5.8.2)(vite@6.2.0(@types/node@20.17.23)(jiti@1.21.6)(sass@1.77.4)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(webpack@5.98.0(esbuild@0.25.0))
+        specifier: ^5.1.6
+        version: 5.1.6(@storybook/components@8.6.4(storybook@8.6.4(prettier@3.5.3)))(@storybook/theming@8.6.4(storybook@8.6.4(prettier@3.5.3)))(@types/react@19.0.1)(next@15.2.0(babel-plugin-react-compiler@0.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.77.4))(postcss@8.5.3)(prettier@3.5.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rollup@4.34.8)(typescript@5.8.2)(vite@6.2.0(@types/node@20.17.23)(jiti@1.21.6)(sass@1.77.4)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(webpack@5.98.0(esbuild@0.25.0))
       '@local/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -870,8 +870,8 @@ importers:
   tooling/eslint:
     dependencies:
       '@fusionary/eslint-config':
-        specifier: ^5.1.5
-        version: 5.1.5(@types/eslint@9.6.1)(astro-eslint-parser@1.2.1)(eslint-plugin-import-x@4.4.2(eslint@9.21.0(jiti@1.21.6))(typescript@5.8.2))(eslint@9.21.0(jiti@1.21.6))(prettier@3.5.3)(svelte@5.22.6)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.23)(typescript@5.8.2)))(turbo@2.4.4)(typescript@5.8.2)
+        specifier: ^5.1.6
+        version: 5.1.6(@types/eslint@9.6.1)(astro-eslint-parser@1.2.1)(eslint-plugin-import-x@4.4.2(eslint@9.21.0(jiti@1.21.6))(typescript@5.8.2))(eslint@9.21.0(jiti@1.21.6))(prettier@3.5.3)(svelte@5.22.6)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.23)(typescript@5.8.2)))(turbo@2.4.4)(typescript@5.8.2)
       astro-eslint-parser:
         specifier: ^1.2.1
         version: 1.2.1
@@ -921,8 +921,8 @@ importers:
   tooling/prettier:
     dependencies:
       '@fusionary/prettier-config':
-        specifier: ^5.1.5
-        version: 5.1.5
+        specifier: ^5.1.6
+        version: 5.1.6
       prettier-plugin-tailwindcss:
         specifier: ^0.6.11
         version: 0.6.11(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.5.3))(prettier-plugin-svelte@3.3.2(prettier@3.5.3)(svelte@5.22.6))(prettier@3.5.3)
@@ -974,8 +974,8 @@ importers:
   tooling/typescript:
     dependencies:
       '@fusionary/tsconfig':
-        specifier: ^5.1.5
-        version: 5.1.5
+        specifier: ^5.1.6
+        version: 5.1.6
 
 packages:
 
@@ -2420,17 +2420,17 @@ packages:
   '@floating-ui/utils@0.2.9':
     resolution: {integrity: sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==}
 
-  '@fusionary/eslint-config@5.1.5':
-    resolution: {integrity: sha512-6QWx9QBFG9DbSyxhWo1YephxRVKrplomYiqLzLSFM5scuUQEHKkj4ZnGJ0xJULIiVHtHBUcRkbMD6S0wPqdEpw==}
+  '@fusionary/eslint-config@5.1.6':
+    resolution: {integrity: sha512-EBOVQHMs9banL/nYATVU1z4tS5e+BcLW1HQ97OtbFNQuD9iEv8d009E2cxZUyxbxiZC4l8BZvQeo7lIozQstoQ==}
 
-  '@fusionary/prettier-config@5.1.5':
-    resolution: {integrity: sha512-bonNP+DYgxNq4fwBIGy9untchmixb+YsKNbgL7kc7O2HpsTZvIcFOl8nscS4PTs5OWM+iG/fyYQkjiCMc4L40Q==}
+  '@fusionary/prettier-config@5.1.6':
+    resolution: {integrity: sha512-vjJsDTciemh2el/4ko/n0rVjRNzX8ObYqhQWWMlH7xFSRGnqh2aL/N9V0OwsBQjoP2z2HzAkuF3PoG7aU/9+5Q==}
 
-  '@fusionary/storybook-config@5.1.5':
-    resolution: {integrity: sha512-axmD/CBQHjAUHUOYyy0sFxaMbIW/BdLEkJMV6TXsV5RRLYn76CYnnfgEJeHXynVFHcreHhWVlukrXYYZEZQjZQ==}
+  '@fusionary/storybook-config@5.1.6':
+    resolution: {integrity: sha512-FNhejpSOINdR+eErspZ+iKJax48eUJNNPevy1ooidulpUoOpRQaG+ZRFaFa1zdexlZ3TOyFCm+wX68eWeyZibw==}
 
-  '@fusionary/tsconfig@5.1.5':
-    resolution: {integrity: sha512-n0xIg09ZIQwK2Eszh6pshbYF2AfsJU98HAnkuedWN4XTbT6O0q07csIaqp5WXp+Oqs4+BdOo1LDxDu0hEGA9Uw==}
+  '@fusionary/tsconfig@5.1.6':
+    resolution: {integrity: sha512-kX5ZrYaU15oD7/EAA19xNrr5yx3LdN795q/84bQIU3dpy/YbqhKyDcPjXnVUHKvw3dDeuafqdd713rLgy01bRQ==}
 
   '@hookform/resolvers@3.10.0':
     resolution: {integrity: sha512-79Dv+3mDF7i+2ajj7SkypSKHhl1cbln1OGavqrsF7p6mbUv11xpqpacPsGDCTRvCSjEEIez2ef1NveSVL3b0Ag==}
@@ -11463,7 +11463,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.9': {}
 
-  '@fusionary/eslint-config@5.1.5(@types/eslint@9.6.1)(astro-eslint-parser@1.2.1)(eslint-plugin-import-x@4.4.2(eslint@9.21.0(jiti@1.21.6))(typescript@5.8.2))(eslint@9.21.0(jiti@1.21.6))(prettier@3.5.3)(svelte@5.22.6)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.23)(typescript@5.8.2)))(turbo@2.4.4)(typescript@5.8.2)':
+  '@fusionary/eslint-config@5.1.6(@types/eslint@9.6.1)(astro-eslint-parser@1.2.1)(eslint-plugin-import-x@4.4.2(eslint@9.21.0(jiti@1.21.6))(typescript@5.8.2))(eslint@9.21.0(jiti@1.21.6))(prettier@3.5.3)(svelte@5.22.6)(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@20.17.23)(typescript@5.8.2)))(turbo@2.4.4)(typescript@5.8.2)':
     dependencies:
       '@eslint/eslintrc': 3.3.0
       '@eslint/js': 9.21.0
@@ -11502,7 +11502,7 @@ snapshots:
       - typescript
       - vue-eslint-parser
 
-  '@fusionary/prettier-config@5.1.5':
+  '@fusionary/prettier-config@5.1.6':
     dependencies:
       '@ianvs/prettier-plugin-sort-imports': 4.4.1(prettier@3.5.3)
       prettier: 3.5.3
@@ -11512,7 +11512,7 @@ snapshots:
       - '@vue/compiler-sfc'
       - supports-color
 
-  '@fusionary/storybook-config@5.1.5(@storybook/components@8.6.4(storybook@8.6.4(prettier@3.5.3)))(@storybook/theming@8.6.4(storybook@8.6.4(prettier@3.5.3)))(@types/react@19.0.1)(next@15.2.0(babel-plugin-react-compiler@0.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.77.4))(postcss@8.5.3)(prettier@3.5.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rollup@4.34.8)(typescript@5.8.2)(vite@6.2.0(@types/node@20.17.23)(jiti@1.21.6)(sass@1.77.4)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(webpack@5.98.0(esbuild@0.25.0))':
+  '@fusionary/storybook-config@5.1.6(@storybook/components@8.6.4(storybook@8.6.4(prettier@3.5.3)))(@storybook/theming@8.6.4(storybook@8.6.4(prettier@3.5.3)))(@types/react@19.0.1)(next@15.2.0(babel-plugin-react-compiler@0.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.77.4))(postcss@8.5.3)(prettier@3.5.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rollup@4.34.8)(typescript@5.8.2)(vite@6.2.0(@types/node@20.17.23)(jiti@1.21.6)(sass@1.77.4)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(webpack@5.98.0(esbuild@0.25.0))':
     dependencies:
       '@storybook/addon-a11y': 8.6.4(storybook@8.6.4(prettier@3.5.3))
       '@storybook/addon-actions': 8.6.4(storybook@8.6.4(prettier@3.5.3))
@@ -11549,7 +11549,7 @@ snapshots:
       - vite
       - webpack
 
-  '@fusionary/tsconfig@5.1.5': {}
+  '@fusionary/tsconfig@5.1.6': {}
 
   '@hookform/resolvers@3.10.0(react-hook-form@7.54.2(react@19.0.0))':
     dependencies:

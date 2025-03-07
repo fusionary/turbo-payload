@@ -6,6 +6,6 @@
     "*.json"
   ],
   "dependencies": {
-    "@fusionary/tsconfig": "^5.1.5"
+    "@fusionary/tsconfig": "^5.1.6"
   }
 }
