@@ -33,6 +33,7 @@
     "tsup",
     "turborepo"
   ],
+  "debug.console.closeOnEnd": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.formatDocument": "explicit"

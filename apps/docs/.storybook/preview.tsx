@@ -1,18 +1,12 @@
-import type { Preview } from '@storybook/react'
-import cssVariablesTheme from '@etchteam/storybook-addon-css-variables-theme'
+import type { Preview } from '@fusionary/storybook-config/preview'
+import basePreview from '@fusionary/storybook-config/preview'
 
-import { preview as basePreview } from '@local/storybook-config'
-
-import '@local/storybook-config/style.css'
+import '@fusionary/storybook-config/style.css'
 import './style.css'
 import '@local/ui/styles.css'
 
 const parameters = {
   ...basePreview.parameters,
-  cssVariables: {
-    defaultTheme: 'Default Theme',
-    files: {},
-  },
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   options: {
     ...basePreview.parameters?.options,
@@ -38,5 +32,3 @@ const preview: Preview = {
 }
 
 export default preview
-
-export const decorators = [cssVariablesTheme]

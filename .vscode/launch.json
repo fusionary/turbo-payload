@@ -71,7 +71,7 @@
       "cwd": "${workspaceFolder}/",
       "name": "Docs",
       "request": "launch",
-      "runtimeArgs": ["dev", "--filter", "docs..."],
+      "runtimeArgs": ["storybook"],
       "runtimeExecutable": "pnpm",
       "skipFiles": ["<node_internals>/**"],
       "type": "node"
