@@ -15,7 +15,7 @@
   "prettier": "@local/prettier-config",
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/node": "^9.1.2",
+    "@astrojs/node": "^9.5.4",
     "@astrojs/react": "4.1.2",
     "@astrojs/tailwind": "^5.1.5",
     "@astrojs/ts-plugin": "^1.10.4",
