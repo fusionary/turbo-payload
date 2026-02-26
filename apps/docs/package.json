@@ -25,7 +25,7 @@
     "@storybook/addon-viewport": "^8.6.4",
     "@storybook/experimental-nextjs-vite": "^8.6.4",
     "@storybook/react": "^8.6.4",
-    "storybook": "^8.6.4"
+    "storybook": "^8.6.17"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
